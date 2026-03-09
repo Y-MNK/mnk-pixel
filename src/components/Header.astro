@@ -22,19 +22,19 @@ const navLinks = [
         </a>
       ))}
 
-      <button id="theme-toggle" type="button" class="text-sm border border-dark-700 hover:border-dark-500 text-dark-300 hover:text-white px-3 py-2 rounded-lg transition-colors duration-200" aria-label="Toggle theme">
-        ☀️ Light
-      </button>
-
       <a href="/#contact" class="text-sm font-medium bg-brand-600 hover:bg-brand-500 text-white px-5 py-2 rounded-lg transition-colors duration-200">
         Get Started
       </a>
+
+      <button id="theme-toggle" type="button" class="w-10 h-10 inline-flex items-center justify-center border border-dark-700 hover:border-dark-500 text-dark-300 hover:text-white rounded-lg transition-colors duration-200" aria-label="Toggle theme">
+        ☀
+      </button>
     </div>
 
     <!-- Mobile actions -->
     <div class="md:hidden flex items-center gap-2">
-      <button id="theme-toggle-mobile" type="button" class="text-xs border border-dark-700 hover:border-dark-500 text-dark-300 hover:text-white px-2.5 py-1.5 rounded-lg transition-colors duration-200" aria-label="Toggle theme">
-        ☀️
+      <button id="theme-toggle-mobile" type="button" class="w-9 h-9 inline-flex items-center justify-center border border-dark-700 hover:border-dark-500 text-dark-300 hover:text-white rounded-lg transition-colors duration-200" aria-label="Toggle theme">
+        ☀
       </button>
       <button id="mobile-toggle" class="text-dark-400 hover:text-white" aria-label="Toggle menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,8 +80,8 @@ const navLinks = [
     localStorage.setItem('mnk-theme', theme);
 
     const isLight = theme === 'light';
-    if (desktopThemeBtn) desktopThemeBtn.textContent = isLight ? '🌙 Dark' : '☀️ Light';
-    if (mobileThemeBtn) mobileThemeBtn.textContent = isLight ? '🌙' : '☀️';
+    if (desktopThemeBtn) desktopThemeBtn.textContent = isLight ? '☾' : '☀';
+    if (mobileThemeBtn) mobileThemeBtn.textContent = isLight ? '☾' : '☀';
   };
 
   setTheme(getInitialTheme());
