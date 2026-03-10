@@ -1,220 +1,100 @@
 ---
 import Base from '../layouts/Base.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
-const services = [
-  {
-    icon: '💻',
-    title: 'Web Development',
-    desc: 'Custom websites and e-commerce stores built for speed, SEO, and conversions. WordPress, Shopify, Astro — we pick the right tool for the job.',
-  },
-  {
-    icon: '🔍',
-    title: 'SEO & Content Strategy',
-    desc: 'Technical audits, on-page optimization, content strategy, and structured data. We make search engines work for you.',
-  },
-  {
-    icon: '🤖',
-    title: 'AI Automation',
-    desc: 'Streamline operations with intelligent workflows, chatbots, and custom integrations. Less manual work, more growth.',
-  },
-  {
-    icon: '♿',
-    title: 'Accessibility & Compliance',
-    desc: 'WCAG-compliant websites that work for everyone. Audits, remediation, and ongoing monitoring.',
-  },
-  {
-    icon: '⚡',
-    title: 'Performance Optimization',
-    desc: 'Core Web Vitals, page speed, caching, and infrastructure tuning. Fast sites rank better and convert more.',
-  },
-  {
-    icon: '📊',
-    title: 'Analytics & Reporting',
-    desc: 'GA4, Search Console, conversion tracking, and custom dashboards. Data-driven decisions, not guesswork.',
-  },
-  {
-    icon: '🏥',
-    title: 'Medical Office Websites',
-    desc: 'Modern, HIPAA-aware websites for doctors, dentists, and clinics. Patient-friendly design, online scheduling, and local SEO that brings patients through the door.',
-  },
-];
-
-const process_steps = [
-  { num: '01', title: 'Discovery', desc: 'We learn your business, goals, and competitive landscape.' },
-  { num: '02', title: 'Strategy', desc: 'A clear plan with timelines, priorities, and measurable outcomes.' },
-  { num: '03', title: 'Build', desc: 'We execute — fast, clean, and with constant communication.' },
-  { num: '04', title: 'Launch & Grow', desc: 'Go live, monitor results, and continuously optimize.' },
-];
 ---
 
 <Base title="MNK Pixel — Web Development, SEO & AI Automation | NJ">
-  <Header />
+  <header class="site-header">
+    <div class="wrap nav">
+      <div class="logo">MNK<span>Pixel</span></div>
+      <a class="btn" href="#contact">Free Growth Audit</a>
+    </div>
+  </header>
 
-  <!-- Hero -->
-  <section class="relative min-h-screen flex items-center pt-20">
-    <div class="absolute inset-0 bg-gradient-to-b from-brand-950/20 via-dark-950 to-dark-950"></div>
-    <div class="relative max-w-6xl mx-auto px-6 py-20">
-      <div class="max-w-3xl">
-        <p class="text-brand-400 font-mono text-sm mb-4 tracking-wider">// Digital Agency — New Jersey</p>
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
-          We build websites that
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">
-            actually work.
-          </span>
-        </h1>
-        <p class="mt-6 text-lg md:text-xl text-dark-400 max-w-2xl leading-relaxed">
-          Web development, SEO, and AI automation for businesses that want results — not just a pretty page. Based in NJ, working with clients nationwide.
-        </p>
-        <div class="mt-10 flex flex-col sm:flex-row gap-4">
-          <a href="#contact" class="inline-flex items-center justify-center bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors duration-200 text-lg">
-            Start a Project
-          </a>
-          <a href="#services" class="inline-flex items-center justify-center border border-dark-700 hover:border-dark-500 text-dark-300 hover:text-white font-medium px-8 py-3.5 rounded-lg transition-colors duration-200 text-lg">
-            See Services
-          </a>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="tag">NJ / TRI-STATE / NATIONWIDE</div>
+        <h1>Websites that <span class="accent">sell, rank, and automate</span> your business.</h1>
+        <p class="sub">We rebuild outdated websites into premium digital systems that drive trust, traffic, and conversion.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get Proposal</a>
+          <a class="btn" href="#work">See Case Studies</a>
+        </div>
+        <div class="metrics">
+          <div class="metric"><b>+143%</b><span>Organic traffic</span></div>
+          <div class="metric"><b>+38%</b><span>Lead conversion</span></div>
+          <div class="metric"><b>-62%</b><span>Load time</span></div>
+          <div class="metric"><b>24h</b><span>Avg response</span></div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="py-24 bg-dark-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="text-brand-400 font-mono text-sm mb-3 tracking-wider">// What we do</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services</h2>
-      <p class="text-dark-400 text-lg max-w-2xl mb-16">Everything you need to establish, grow, and optimize your digital presence — under one roof. From e-commerce stores to medical practice websites.</p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map(s => (
-          <div class="group p-6 rounded-xl border border-dark-800/60 hover:border-brand-600/40 bg-dark-900/40 hover:bg-dark-900/80 transition-all duration-300">
-            <span class="text-3xl mb-4 block">{s.icon}</span>
-            <h3 class="text-lg font-semibold text-white mb-2">{s.title}</h3>
-            <p class="text-sm text-dark-400 leading-relaxed">{s.desc}</p>
-          </div>
-        ))}
+      <div class="heroart">
+        <img src="/mock-assets/hero-collage.svg" alt="Case study collage placeholder" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Process -->
-  <section class="py-24 bg-dark-900/30 border-y border-dark-800/50">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="text-brand-400 font-mono text-sm mb-3 tracking-wider">// How we work</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-16">Our Process</h2>
-
-      <div class="grid md:grid-cols-4 gap-8">
-        {process_steps.map(step => (
-          <div class="relative">
-            <span class="text-5xl font-extrabold text-dark-800/60 font-mono">{step.num}</span>
-            <h3 class="text-lg font-semibold text-white mt-2 mb-2">{step.title}</h3>
-            <p class="text-sm text-dark-400 leading-relaxed">{step.desc}</p>
-          </div>
-        ))}
+    <section id="services">
+      <div class="cards">
+        <article class="card"><div>🚀</div><h3>Launch</h3><p>Website build + conversion UX + SEO foundation.</p></article>
+        <article class="card"><div>📈</div><h3>Rank</h3><p>Technical SEO + local visibility + content momentum.</p></article>
+        <article class="card"><div>🤖</div><h3>Automate</h3><p>AI workflows for lead handling, follow-up, and reporting.</p></article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Work / Social Proof -->
-  <section id="work" class="py-24 bg-dark-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="text-brand-400 font-mono text-sm mb-3 tracking-wider">// Recent work</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Selected Projects</h2>
-      <p class="text-dark-400 text-lg max-w-2xl mb-16">A few businesses we've helped grow.</p>
+    <section id="work" class="band">
+      <h2>Specialized for outdated medical office websites</h2>
+      <p>Modernize patient trust, local visibility, and appointment flow with a conversion-first experience.</p>
+      <img src="/mock-assets/before-after.svg" alt="Before and after modernization placeholder" />
+    </section>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="group rounded-xl border border-dark-800/60 hover:border-brand-600/40 overflow-hidden bg-dark-900/40 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-br from-brand-950/40 to-dark-900 flex items-center justify-center">
-            <span class="text-dark-600 font-mono text-sm">Project Image</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-white mb-1">P360 Design</h3>
-            <p class="text-sm text-dark-500 mb-3">Home Staging & Interior Design Studio</p>
-            <p class="text-sm text-dark-400">Full SEO overhaul, accessibility audit, content optimization, and technical performance improvements.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-xl border border-dark-800/60 hover:border-brand-600/40 overflow-hidden bg-dark-900/40 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-br from-brand-950/40 to-dark-900 flex items-center justify-center">
-            <span class="text-dark-600 font-mono text-sm">Project Image</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-white mb-1">CleanFlames</h3>
-            <p class="text-sm text-dark-500 mb-3">E-Commerce — Ventless Fireplaces</p>
-            <p class="text-sm text-dark-400">Shopify store rebuild, supplier strategy, branding, and launch planning for a specialty e-commerce brand.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-xl border border-dark-800/60 hover:border-brand-600/40 overflow-hidden bg-dark-900/40 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-br from-brand-950/40 to-dark-900 flex items-center justify-center">
-            <span class="text-dark-600 font-mono text-sm">Project Image</span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-white mb-1">Cardiology Practice</h3>
-            <p class="text-sm text-dark-500 mb-3">Medical Office — Website Modernization</p>
-            <p class="text-sm text-dark-400">Full website audit, SEO remediation, and modernization plan for a multi-location NJ cardiology practice with an outdated WordPress site.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-24 bg-dark-900/30 border-y border-dark-800/50">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl">
-        <p class="text-brand-400 font-mono text-sm mb-3 tracking-wider">// About</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Built Different</h2>
-        <p class="text-lg text-dark-300 leading-relaxed mb-6">
-          MNK Pixel is a digital agency based in New Jersey. We combine web development, search engine optimization, and AI-powered automation to help businesses grow online.
-        </p>
-        <p class="text-lg text-dark-400 leading-relaxed mb-6">
-          We're not a big agency with layers of account managers. You work directly with the people who build your project. That means faster turnaround, clearer communication, and better results.
-        </p>
-        <p class="text-lg text-dark-400 leading-relaxed mb-6">
-          Whether you need a new website, want to rank higher on Google, or are looking to automate repetitive tasks with AI — we've got you covered.
-        </p>
-        <p class="text-lg text-dark-400 leading-relaxed">
-          We work with small businesses, design studios, e-commerce brands, and medical practices across New Jersey and the tri-state area — plus clients nationwide who value working with a team that actually picks up the phone.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-24 bg-dark-950">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-2xl mx-auto text-center">
-        <p class="text-brand-400 font-mono text-sm mb-3 tracking-wider">// Let's talk</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Start a Project</h2>
-        <p class="text-dark-400 text-lg mb-10">Tell us about your project and we'll get back to you within 24 hours.</p>
-
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4 text-left">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label for="name" class="block text-sm font-medium text-dark-400 mb-1">Name</label>
-              <input type="text" id="name" name="name" required
-                class="w-full bg-dark-900 border border-dark-800 rounded-lg px-4 py-3 text-white placeholder:text-dark-600 focus:outline-none focus:border-brand-600 transition-colors" />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-dark-400 mb-1">Email</label>
-              <input type="email" id="email" name="email" required
-                class="w-full bg-dark-900 border border-dark-800 rounded-lg px-4 py-3 text-white placeholder:text-dark-600 focus:outline-none focus:border-brand-600 transition-colors" />
-            </div>
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-medium text-dark-400 mb-1">Tell us about your project</label>
-            <textarea id="message" name="message" rows="5" required
-              class="w-full bg-dark-900 border border-dark-800 rounded-lg px-4 py-3 text-white placeholder:text-dark-600 focus:outline-none focus:border-brand-600 transition-colors resize-none"></textarea>
-          </div>
-          <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-3.5 rounded-lg transition-colors duration-200 text-lg">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <Footer />
+    <section id="contact" class="contact">
+      <h2>Start Your Project</h2>
+      <p>Tell us what you need. We’ll reply within 24 hours.</p>
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </section>
+  </main>
 </Base>
+
+<style>
+  :global(body){
+    margin:0;
+    font-family:Inter,system-ui;
+    background:radial-gradient(900px 450px at 85% -5%,#123359 0,transparent 45%),linear-gradient(180deg,#0c1016,#0b1017);
+    color:#f3f7ff;
+  }
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .site-header{position:sticky;top:0;z-index:10;background:rgba(10,14,20,.72);backdrop-filter:blur(9px);border-bottom:1px solid #233142}
+  .nav{height:74px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:25px;font-weight:900}.logo span{color:#66d1ff}
+  .btn{padding:12px 18px;border-radius:12px;border:1px solid #2c3a50;color:#eaf2ff;text-decoration:none;background:transparent;display:inline-block}
+  .btn.primary{background:linear-gradient(135deg,#2ea1ff,#66d1ff);color:#041321;border:none;font-weight:800}
+  .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;padding:84px 0 36px}
+  .tag{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#b9c9e4}
+  h1{font-size:62px;line-height:1.03;letter-spacing:-.03em;margin:10px 0 14px}
+  .accent{color:#66d1ff}
+  .sub{font-size:22px;line-height:1.55;color:#a4b1c8}
+  .cta{display:flex;gap:12px;margin-top:22px}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+  .metric{padding:13px;border:1px solid #31455f;border-radius:11px;background:#101924}
+  .metric b{font-size:30px}.metric span{display:block;color:#9cb5d7;font-size:13px}
+  .heroart{border:1px solid #31507b;border-radius:18px;background:linear-gradient(180deg,#132338,#101c2d);padding:12px}
+  .heroart img{width:100%;border-radius:12px;display:block}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:30px 0}
+  .card{padding:22px;border-radius:16px;border:1px solid #2f4663;background:linear-gradient(180deg,#132437,#112133)}
+  .card h3{font-size:30px;margin:7px 0}.card p{margin:0;color:#a7bddd;line-height:1.55}
+  .band{margin:14px 0 44px;padding:24px;border:1px solid #3a5b86;border-radius:20px;background:linear-gradient(180deg,#132740,#102238)}
+  .band h2{font-size:50px;line-height:1.08;margin:0 0 8px}.band p{font-size:21px;color:#b1c4e3;margin:0 0 14px}
+  .band img{width:100%;border-radius:14px;border:1px solid #3c5e8c}
+  .contact{padding:10px 0 70px}
+  .contact h2{font-size:40px;margin:0 0 10px}
+  .contact p{color:#a4b1c8;margin:0 0 16px}
+  .form{display:grid;gap:10px;max-width:760px}
+  .form input,.form textarea{background:#0f1823;border:1px solid #2e435f;border-radius:10px;padding:12px;color:#f3f7ff}
+  .form button{width:max-content}
+  @media (max-width:980px){.hero{grid-template-columns:1fr}h1{font-size:45px}.metrics{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}.band h2{font-size:38px}}
+</style>

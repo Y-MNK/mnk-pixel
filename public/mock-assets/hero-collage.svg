@@ -1,0 +1,35 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="900" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2B5E"/>
+      <stop offset="1" stop-color="#0D1737"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D6BA7B"/>
+      <stop offset="1" stop-color="#8AA7FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="618" rx="24" fill="url(#g1)" stroke="#33467E"/>
+  <rect x="36" y="36" width="382" height="230" rx="16" fill="#111D45" stroke="#2E4278"/>
+  <rect x="448" y="36" width="416" height="160" rx="16" fill="#111D45" stroke="#2E4278"/>
+  <rect x="448" y="218" width="416" height="48" rx="12" fill="#0D1635" stroke="#2E4278"/>
+  <rect x="36" y="290" width="828" height="294" rx="16" fill="#0F1A3D" stroke="#2E4278"/>
+
+  <rect x="62" y="70" width="150" height="14" rx="7" fill="#405792"/>
+  <rect x="62" y="96" width="220" height="10" rx="5" fill="#2F4479"/>
+  <rect x="62" y="126" width="330" height="116" rx="12" fill="#0A122E" stroke="#2B3F73"/>
+
+  <circle cx="476" cy="116" r="8" fill="#D6BA7B"/>
+  <rect x="496" y="108" width="340" height="14" rx="7" fill="#3B5188"/>
+  <rect x="496" y="132" width="280" height="10" rx="5" fill="#2E4174"/>
+
+  <rect x="470" y="234" width="130" height="16" rx="8" fill="url(#g2)"/>
+  <rect x="612" y="234" width="130" height="16" rx="8" fill="#3C538D"/>
+  <rect x="754" y="234" width="86" height="16" rx="8" fill="#3C538D"/>
+
+  <rect x="72" y="322" width="240" height="236" rx="12" fill="#101B3E" stroke="#2D4277"/>
+  <rect x="330" y="322" width="240" height="236" rx="12" fill="#101B3E" stroke="#2D4277"/>
+  <rect x="588" y="322" width="240" height="236" rx="12" fill="#101B3E" stroke="#2D4277"/>
+
+  <text x="450" y="604" text-anchor="middle" fill="#839BD2" font-family="Inter, Arial" font-size="16">Premium Case Study Collage Placeholder</text>
+</svg>
